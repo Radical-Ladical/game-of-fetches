@@ -5,7 +5,7 @@ import components from './components/axios';
 
 
 export default class App extends Component {
-  constructo(props) {
+  constructor(props) {
     super(props);
     this.state= {
       isLoaded:false,
@@ -38,5 +38,3 @@ export default class App extends Component {
 
 
 
-
-export default App;
