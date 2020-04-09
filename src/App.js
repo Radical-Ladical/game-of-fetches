@@ -21,11 +21,16 @@ export default class App extends Component {
       console.log(responses)
       const responseOne = responses[0].data.born
 
+      this.setState({
+        data:[responseOne]
+      })
+
     })).catch(errors => {
       console.log ('Error fetching data')
-    })
-    
+    })  
   }
+
+
   render() {
     return(
       <div>
